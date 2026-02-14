@@ -1,48 +1,51 @@
-// DOM - Document Object Model
+let img = document.querySelector('#img');
+let h2 = document.querySelector('#h2');
+let btn = document.querySelector('button');
 
-//DOM has 4 Pillars 
-    // Selection of an Element
-    // Changing HTML
-    // Changing CSS
-    // Event Listeners
+let arr = [{
+        team:'Chennai Super Kings',
+        backgroundImg: "./CSKoutline.avif"
+    },
+    {
+        team:'Delhi Capitals',
+        backgroundImg: "./DCoutline.png"
+    },
+    {
+        team:'Gujarat Titans',
+        backgroundImg: "./GToutline.png"
+    },
+    {
+        team:'Kolkata Knight Riders',
+        backgroundImg: "./KKRoutline.png"
+    },
+    {
+        team:'Lucknow Super Giants',
+        backgroundImg: "./LSGoutline.png"
+    },
+    {
+        team:'Mumbai Indians',
+        backgroundImg: "./MIoutline.png"
+    },
+    {
+        team:'Punjab Kings',
+        backgroundImg: "./PBKSoutline.png"
+    },
+    {
+        team:'Rajasthan Royals',
+        backgroundImg: "./RRoutline.png"
+    },
+    {
+        team:'Royal Challengers Bengaluru',
+        backgroundImg: "./RCBoutline.png"
+    },
+    {
+        team:'Sunrisers Hyderabad',
+        backgroundImg: "./SRHoutline.png"
+    }
+];
 
-// var h1 = document.querySelector('h1');
-
-// h1.innerHTML = 'Bhargav Zinzala';
-
-// h1.style.color = 'red';
-
-// console.log(h1);
-
-
-// const abcd = document.getElementById('abcd');
-// abcd.innerHTML = 'Hello Bhailoggggg';
-// abcd.style.backgroundColor = '#222';
-
-
-// const h1 = document.querySelector('h1');
-// const btn = document.querySelector('button');
-
-// btn.addEventListener('click',function(){
-//     h1.innerHTML = 'GOOD NIGHT',
-//     h1.style.color = 'red',
-//     h1.style.fontSize = '30px'
-
-// })
-
-
-var h1 = document.querySelector('h1');
-var inc = document.querySelector('#inc');
-var dec = document.querySelector('#dec');
-
-var a = 0;
-
-inc.addEventListener('click',function(){
-    a++;
-    h1.innerHTML = a;
-});
-
-dec.addEventListener('click',function(){
-    a--;
-    h1.innerHTML = a;
+btn.addEventListener('click',function(){
+    let winner = arr[Math.floor(Math.random()*arr.length)];
+    h2.innerHTML = winner.team;
+    img.src = winner.backgroundImg;
 });
