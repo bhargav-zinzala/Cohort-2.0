@@ -1,51 +1,25 @@
-let img = document.querySelector('#img');
-let h2 = document.querySelector('#h2');
 let btn = document.querySelector('button');
+let h1 = document.querySelector('h1');
+let inner = document.querySelector('.inner');
 
-let arr = [{
-        team:'Chennai Super Kings',
-        backgroundImg: "./CSKoutline.avif"
-    },
-    {
-        team:'Delhi Capitals',
-        backgroundImg: "./DCoutline.png"
-    },
-    {
-        team:'Gujarat Titans',
-        backgroundImg: "./GToutline.png"
-    },
-    {
-        team:'Kolkata Knight Riders',
-        backgroundImg: "./KKRoutline.png"
-    },
-    {
-        team:'Lucknow Super Giants',
-        backgroundImg: "./LSGoutline.png"
-    },
-    {
-        team:'Mumbai Indians',
-        backgroundImg: "./MIoutline.png"
-    },
-    {
-        team:'Punjab Kings',
-        backgroundImg: "./PBKSoutline.png"
-    },
-    {
-        team:'Rajasthan Royals',
-        backgroundImg: "./RRoutline.png"
-    },
-    {
-        team:'Royal Challengers Bengaluru',
-        backgroundImg: "./RCBoutline.png"
-    },
-    {
-        team:'Sunrisers Hyderabad',
-        backgroundImg: "./SRHoutline.png"
-    }
-];
+let a = 0;
 
-btn.addEventListener('click',function(){
-    let winner = arr[Math.floor(Math.random()*arr.length)];
-    h2.innerHTML = winner.team;
-    img.src = winner.backgroundImg;
+btn.addEventListener('click',()=>{
+    btn.style.pointerEvents = 'none';
+
+    let num = 50 + Math.floor(Math.random()*50);
+    
+    console.log('Your file will be downloaded in',num/10,'seconds');
+    
+    let int = setInterval(() => {
+        a++;
+        h1.innerHTML = a+'%';
+        inner.style.width = a + '%';
+    }, num);
+
+    setTimeout(()=>{
+        clearInterval(int);
+        btn.style.opacity = 0.5;
+        btn.innerHTML = 'Downloaded';
+    }, num*100);
 });

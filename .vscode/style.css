@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -10,52 +10,70 @@ body{
     width: 100%;
 }
 
-body{
-    background: linear-gradient(90deg,rgba(92, 100, 105, 1) 0%, rgba(87, 139, 199, 1) 50%, rgba(191, 87, 212, 1) 100%);
-}
-
 main{
     height: 100%;
     width: 100%;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
 }
 
-.box{
-    height: 20rem;
-    width: 20rem;
-    border-radius: 2rem;
-    border: 0.2rem solid white;
+.card{
+    width: 24rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.card p span{
+    color: royalblue;
+    font-weight: 600;
+}
+
+.outer{
+    height: 1rem;
+    width: 100%;
+    background-color: gainsboro;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.inner{
+    height: 1rem;
+    width: 0%;
+    border-radius: 0.5rem;
+    background-color: green;
+}
+
+.bottom{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    gap:2rem;
+    justify-content: space-between;
 }
 
-.box img{
-    height: 8rem;
+.bottom h1{
+    font-family: monospace;
 }
 
-.box h2{
-    font-size: 2rem;
-
-}
-
-button{
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+.bottom button{
+    padding: 0.4rem 1rem;
     border: none;
-    background-color: royalblue;
+    border-radius: 0.3rem;
+    background-color: green;
     color: white;
-    border-radius: 1.6rem;
+    cursor: pointer;
 }
 
 button:active{
-    scale:0.95;
+    scale: 0.95;
 }
+
