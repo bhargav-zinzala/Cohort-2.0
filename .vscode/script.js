@@ -1,25 +1,20 @@
-let btn = document.querySelector('button');
-let h1 = document.querySelector('h1');
-let inner = document.querySelector('.inner');
+let img = document.querySelector('#img');
+let like = document.querySelector('#like');
 
-let a = 0;
+img.addEventListener('dblclick',function(){
+    like.style.opacity = 1
+    like.style.transform = 'translate(-50%,-50%) scale(1) rotate(0deg)';
 
-btn.addEventListener('click',()=>{
-    btn.style.pointerEvents = 'none';
+    setTimeout(function(){
+    like.style.transform = 'translate(-50%,-300%) scale(1) rotate(0deg)';
+    },800);
 
-    let num = 50 + Math.floor(Math.random()*50);
-    
-    console.log('Your file will be downloaded in',num/10,'seconds');
-    
-    let int = setInterval(() => {
-        a++;
-        h1.innerHTML = a+'%';
-        inner.style.width = a + '%';
-    }, num);
+    setTimeout(function(){
+        like.style.opacity = 0;
+    },1000);
 
-    setTimeout(()=>{
-        clearInterval(int);
-        btn.style.opacity = 0.5;
-        btn.innerHTML = 'Downloaded';
-    }, num*100);
+    setTimeout(function(){
+    like.style.transform = 'translate(-50%,-50%) scale(0) rotate(-60deg)';
+    },1200);
+
 });

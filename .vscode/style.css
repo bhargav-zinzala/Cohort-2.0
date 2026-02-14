@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -17,63 +17,43 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .card{
-    width: 24rem;
-    background-color: #fff;
-    border: none;
-    border-radius: 1rem;
+    width: 16rem;
+    background-color: white;
     padding: 1rem;
-}
-
-.card p{
-    text-align: center;
-    font-family: monospace;
-    font-size: 1rem;
-}
-
-.card p span{
-    color: royalblue;
-    font-weight: 600;
-}
-
-.outer{
-    height: 1rem;
-    width: 100%;
-    background-color: gainsboro;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1.2rem;
 }
 
 .inner{
-    height: 1rem;
-    width: 0%;
-    border-radius: 0.5rem;
-    background-color: green;
+    position: relative;
+    overflow: hidden;
 }
 
-.bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.inner img{
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: 1.2rem;
 }
 
-.bottom h1{
+.card h1{
+    text-align: center;
     font-family: monospace;
 }
 
-.bottom button{
-    padding: 0.4rem 1rem;
-    border: none;
-    border-radius: 0.3rem;
-    background-color: green;
-    color: white;
-    cursor: pointer;
+.inner i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4.4rem;
+    opacity: 0;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.24,1.93,.83,.67) 0.4s;
 }
-
-button:active{
-    scale: 0.95;
-}
-
