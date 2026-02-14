@@ -13,571 +13,83 @@ body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: rgba(36, 182, 255, 0.427);
-    padding: 20px 360px;
-    display: flex;
-    flex-wrap: wrap;    
-    gap: 16px;
+    background-color: #4ee8ebb9;
     overflow: auto;
 }
 
-.card1{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+#navbar{
+    height: 10%;
+    width: 100%;
+    background-color: skyblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    flex-direction: column;
 }
 
-.card1 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
+#navbar h1{
+    font-size: 40px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.card1 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card1 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card1 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card1 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card2{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+#cards{
+    height: 80%;
+    width: 100%;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.card2 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card2 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card2 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card2 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card2 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card3{
+.card{
     height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    width: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.05s;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: -100%;
+    transition: all ease 0.5s;
+}
+
+.card:hover .bottom{
+    bottom: 0;
+}
+
+.card:hover img{
+    filter: blur(1px);
+}
+
+.bottom{
+    height: 20%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
 }
 
-.card3 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
+.logo{
+    font-size: 20px;
 }
 
-.card3 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card3 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card3 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
+.btmleft{
     color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card3 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card4{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card4 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card4 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card4 p{
-    font-size: 14px;
+    font-size: 30px;
     font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card4 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card4 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card5{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card5 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card5 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card5 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card5 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card5 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card6{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card6 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card6 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card6 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card6 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card6 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card7{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card7 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card7 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card7 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card7 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card7 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card8{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card8 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card8 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card8 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card8 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card8 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card9{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card9 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card9 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card9 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card9 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card9 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card10{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card10 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card10 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card10 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card10 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card10 button:hover{
-    background-color: #008cfff3;
-    color: white;
-}
-
-.card11{
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.card11 img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-.card11 h2{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card11 p{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card11 button{
-    border: 2px solid #008cfff3;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card11 button:hover{
-    background-color: #008cfff3;
-    color: white;
 }
