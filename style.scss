@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -10,61 +11,317 @@ body{
     width: 100%;
 }
 
-@mixin img-position(){
-    background-size: cover;
-    background-position: center;
+html{
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+body{
+    background-color: #121212;
+}
+
+@mixin flex-column($gap: 0rem){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+section{
+    max-width: 2000px;
 }
 
 main{
-    height: 100%;
     width: 100%;
-    padding: 10px;
-    background-color: black;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1.2fr;
-    grid-template-areas: "left top-right top-right top-right"
-                         "left top-right top-right top-right"
-                         "left bottom-first bottom-second bottom-third"
-    ;
+    @include flex-column(0rem);
+    align-items: center;
 
-    #left{
-        grid-area: left;
-        background-image: url(https://images.unsplash.com/photo-1633903424335-c0db1f20c7b2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        @include img-position();
-        border-radius: 20px;
+    #section1{
+        width: 100%;
+        @include flex-column(0.72rem);
+        color: white;
+        padding: 0.72rem;
+
+        figure{
+            img{
+                width: 100%;
+                border-radius: 0.72rem;
+            }
+
+        }
+
+        section{
+            background-color: #1E1E1E;
+            padding: 2rem;
+            border-radius: 0.72rem;
+            @include flex-column(5rem);
+            justify-content: space-between;
+
+            #top-section{
+                font-size: 0.9rem;
+                font-weight: 400;
+                opacity: 0.8;
+            }
+
+            #bottom-section{
+                @include flex-column(0.5rem);
+
+                h1{
+                    font-size: 2.6rem;
+                    font-weight: 440;
+                    text-transform: uppercase;
+                    opacity: 0.8;
+                }
+            
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    line-height: 2.2rem;
+                    opacity: 0.5;
+                }
+
+                button{
+                    width: fit-content;
+                    padding: 1rem 2rem;
+                    border-radius: 1rem;
+                    background-color: #a3a3a3;
+                }
+
+            }
+
+        }
+
     }
 
-    #top-right{
-        grid-area: top-right;
-        background-image: url(https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        @include img-position();
-        border-radius: 20px;
-    }
+    #section2{
+        width: 100%;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "view1 view2"
+                             "view3 view4"
+        ;
+        align-items: center;
+        justify-items: center;
+        padding: 0.72rem;
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
 
-    #bottom-first{
-        grid-area: bottom-first;
-        background-image: url(https://plus.unsplash.com/premium_photo-1676496046182-356a6a0ed002?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        @include img-position();
-        border-radius: 16px;
-    }
 
-    #bottom-second{
-        grid-area: bottom-second;
-        background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        @include img-position();
-        border-radius: 16px;
-    }
+            #view1{
+                grid-area: view1;
+            }
 
-    #bottom-third{
-        grid-area: bottom-third;
-        background-image: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        @include img-position();
-        border-radius: 16px;
+            #view2{
+                grid-area: view2;
+            }
+
+            #view3{
+                grid-area: view3;
+            }
+
+            #view4{
+                grid-area: view4;
+            }
+
+            .view{
+                @include flex-column(0.842rem)
+            }
+
+            .text-uppercase{
+                text-transform: uppercase;
+                font-size: 1rem;
+                opacity: 0.6;
+
+            }
+
+            .h1-fontsize{
+                font-size: 2.6rem;
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+
+        #section3{
+            width: 100%;
+            @include flex-column(0.72rem);
+            color: white;
+            padding: 0.72rem;
+
+            figure{
+                img{
+                    width: 100%;
+                    border-radius: 0.72rem;
+                }
+
+            }
+
+            section{
+                background-color: #1E1E1E;
+                padding: 2rem;
+                border-radius: 0.72rem;
+                @include flex-column(5rem);
+                justify-content: space-between;
+
+                #top-section{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    opacity: 0.790;
+                    text-transform: uppercase;
+
+                }
+
+                #bottom-section{
+                    @include flex-column(0.5rem);
+
+                    h1{
+                        font-size: 2.2rem;
+                        font-weight: 440;
+                        text-transform: uppercase;
+                        opacity: 0.842;
+                    }
+            
+                    p{
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        line-height: 2rem;
+                        opacity: 0.5;
+                    }
+
+                }
+
+            }
+
+        #section3{
+            width: 100%;
+            @include flex-column(0.72rem);
+            color: white;
+            padding: 0.72rem;
+
+        figure{
+            img{
+                width: 100%;
+                border-radius: 0.72rem;
+            }
+
+        }
+
+        section{
+            background-color: #1E1E1E;
+            padding: 2rem;
+            border-radius: 0.72rem;
+            @include flex-column(5rem);
+            justify-content: space-between;
+
+            #top-section{
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 0.790;
+                text-transform: uppercase;
+
+            }
+
+            #bottom-section{
+                @include flex-column(0.5rem);
+
+                h1{
+                    font-size: 2.2rem;
+                    font-weight: 440;
+                    text-transform: uppercase;
+                    opacity: 0.842;
+                }
+            
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+                    opacity: 0.5;
+                }
+
+            }
+
+        }
+
+        #section4{
+        width: 100%;
+        @include flex-column(0.72rem);
+        color: white;
+        padding: 0.72rem;
+
+        figure{
+            img{
+                width: 100%;
+                border-radius: 0.72rem;
+            }
+
+        }
+
+        section{
+            background-color: #1E1E1E;
+            padding: 2rem;
+            border-radius: 0.72rem;
+            @include flex-column(5rem);
+            justify-content: space-between;
+
+            #top-section{
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 0.790;
+                text-transform: uppercase;
+
+            }
+
+            #bottom-section{
+                @include flex-column(0.5rem);
+
+                h1{
+                    font-size: 2.2rem;
+                    font-weight: 440;
+                    text-transform: uppercase;
+                    opacity: 0.842;
+                }
+            
+                p{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+                    opacity: 0.5;
+                }
+
+            }
+
+        }
+
+        }
+
     }
 
 }
+}
 
+@media (min-width:990px){
+    main{
+        #section1{
+            flex-direction: row;
 
+            figure,section{
+                width: 50%;
+            }
 
+            section{
+                padding: 4rem;
+                justify-content: space-between;
+
+                #bottom-section{
+
+                    h1{
+                        font-size: 4rem;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
