@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 html,
@@ -14,46 +15,39 @@ main{
     height: 100%;
     width: 100%;
     background-color: black;
+    padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .card{
-    width: 16rem;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 1.2rem;
-}
-
-.inner{
-    position: relative;
-    overflow: hidden;
-}
-
-.inner img{
-    height: 16rem;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 0.5rem;
-    border-radius: 1.2rem;
-}
-
-.card h1{
+    width: 20rem;
+    background-color: #fff;
     text-align: center;
-    font-family: monospace;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.inner i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 4.4rem;
-    opacity: 0;
-    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    background-clip: text;
-    color: transparent;
-    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
-    transition: all cubic-bezier(.24,1.93,.83,.67) 0.4s;
+.card img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h2{
+    font-size: 2rem;
+    white-space: nowrap;
+    margin-bottom: 0.6rem;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.card p{
+    font-size: 1rem;
 }
