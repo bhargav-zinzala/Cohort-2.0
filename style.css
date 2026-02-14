@@ -1,10 +1,6 @@
 @font-face {
-    font-family: title;
-    src: url(./Hyper\ Oxide.ttf);
-}
-@font-face {
-    font-family: button;
-    src: url(./exwayer.ttf);
+    font-family: mario;
+    src: url(./SuperMario256.ttf);
 }
 
 *{
@@ -19,32 +15,91 @@ html,body{
 }
 
 #main{
-    height: 738px;
-    background-image: url(./wallpaperflare.com_wallpaper.jpg);
+    height: 100%;
+    width: 100%;
+    background-image: url(./Mario\ BackGround\ Image.jpg);
     background-size: cover;
-    background-position: center;
-    text-align: center;
+    top: 0;
+    /* Screen Ratio 1528 x 738 px */
 }
 
-h1{
-    font-family: title;
-    padding-top: 310px;
-    padding-bottom: 8px;
-    color: crimson;
-    font-size: 70px;
-}
-
-button{
-    font-size: 30px;
+#navbar{
+    padding: 20px 25px;
+    color: darkblue;
+    font-size: 20px;
     font-weight: 1000;
-    font-family: button;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: aliceblue;
-    border: 2px solid white;
-    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-button:active{
-    scale: 0.95;
+#title{
+    font-size: 180px;
+    text-align: center;
+    padding-top: 5%;
+    font-family: mario;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#btmleft{
+    height: 20px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btmleft h3{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#btmleft p{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#bottombar{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottombar a{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first{
+    position: absolute;
+    top: 380px;
+    left: 390px;
+    height: 340px;
+}
+
+#center{
+    height: 340px;
+    position: absolute;
+    top: 320px;
+    left: 850px;
+}
+
+#last{
+    height: 300px;
+    position: absolute;
+    top: 340px;
+    left: 1240px;
 }
