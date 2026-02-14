@@ -1,0 +1,230 @@
+@font-face {
+    font-family: paragraph;
+    src: url(./Metropolis-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #F6F8FA;
+}
+
+.title{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#first{
+    height: 200px;
+    width: 100%;
+    background-color: #1A2434;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+#f1{
+    color: white;
+    padding-top: 30px;
+}
+
+#f2{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: paragraph;
+}
+
+#s1{
+    text-align: center;
+    font-size: 18px;
+    font-family: paragraph;
+    padding-top: 10px;
+}
+
+#second{
+    height: 200px;
+    margin: 0px 150px ;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+
+#third{
+    height: 200px;
+    margin: 20px 150px ;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: skyblue;
+}
+
+#t1{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#t2{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+
+#fourth{
+    height: 240px;
+    margin: 20px 150px ;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: rgb(239, 239, 41);
+}
+
+#fo1{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#fo2{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#fo3{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#fifth{
+    height: 240px;
+    margin: 20px 150px ;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: lightpink;
+}
+
+#fi1{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#fi2{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#fi3{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#six{
+    height: 240px;
+    margin: 20px 150px ;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: lightgreen;
+}
+
+#s1{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#s2{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+#s3{
+    height: 40px;
+    width: 50%;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.div{
+    height: 10px;
+    width: 1100px;
+    background-color: white;
+    padding: 1px 100px;
+}
