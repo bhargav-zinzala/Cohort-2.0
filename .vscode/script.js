@@ -1,6 +1,12 @@
-let cursor = document.querySelector('#cursor');
+let list = document.querySelectorAll('.list');
 
-document.body.addEventListener('mousemove',function(dets){
-    cursor.style.left = dets.x + 'px';
-    cursor.style.top = dets.y + 'px';    
+list.forEach(function(elem){
+    elem.childNodes[3].addEventListener('click',function(){
+        if(elem.childNodes[3].innerHTML == 'Add Friend'){
+            elem.childNodes[3].innerHTML = 'Remove Friend';
+        }
+        else{
+            elem.childNodes[3].innerHTML = 'Add Friend';
+        }
+    });
 });

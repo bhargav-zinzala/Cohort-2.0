@@ -14,12 +14,34 @@ main{
     height: 100%;
     width: 100%;
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-#cursor{
-    height: 5rem;
-    width: 5rem;
-    position: fixed;
-    transform: translate(-50%,-50%);
-    cursor: none;
+.list{
+    height: 4rem;
+    width: 22rem;
+    background-color: royalblue;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+button{
+    padding:0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: monospace;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 0rem 1rem 0rem 1rem;
+}
+
+button:active{
+    scale: 0.95;
 }
