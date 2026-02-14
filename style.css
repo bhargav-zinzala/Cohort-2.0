@@ -1,13 +1,3 @@
-@font-face {
-    font-family: navfont;
-    src: url(./sf-pro-display_regular.woff2);
-}
-
-@font-face {
-    font-family: nextnav;
-    src: url(./sf-pro-text_bold.woff2);
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -23,66 +13,571 @@ body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(36, 182, 255, 0.427);
+    padding: 20px 360px;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 16px;
+    overflow: auto;
 }
 
-#navbar{
-    height: 50px;
-    width: 100%;
-    background-color: #181717;
-    color: white;
+.card1{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 10px;
+    flex-direction: column;
 }
 
-#navbar a{
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: navfont;
+.card1 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
-i{
-    color: #DA7A40;
-    font-size: 18px;
+.card1 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#nextnav{
-    height: 80%;
-    width: 100%;
-    background-color: #000000;
+.card1 p{
+    font-size: 14px;
+    font-weight: 400;
     text-align: center;
-    padding: 50px;
-    background-image: url(./hero_iphone_17_pro__bknyzxfk2agi_mediumtall.jpg);
-    background-size: cover;
-    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#nextnav h1{
-    color: #fff;
-    font-family: nextnav;
-    font-size: 56px;
-    font-weight: 550;
-}
-
-#nextnav h4{
-    color: #fff;
-    font-family: navfont;
-    font-size: 28px;
-    font-weight: 300;
-    margin-top: 8px;
-}
-
-#links button{
-    color: white;
-    padding: 10px 25px;
-    margin: 22px 8px;
-    font-size: 16px;
-    border: none;
+.card1 button{
+    border: 2px solid #008cfff3;
     border-radius: 20px;
-    background-color: rgb(14, 118, 255);
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
+.card1 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card2{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card2 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card2 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card2 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card2 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card2 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card3{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card3 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card3 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card3 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card3 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card3 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card4{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card4 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card4 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card4 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card4 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card4 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card5{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card5 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card5 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card5 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card5 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card5 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card6{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card6 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card6 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card6 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card6 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card6 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card7{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card7 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card7 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card7 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card7 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card7 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card8{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card8 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card8 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card8 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card8 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card8 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card9{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card9 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card9 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card9 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card9 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card9 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card10{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card10 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card10 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card10 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card10 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card10 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
+
+.card11{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card11 img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card11 h2{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card11 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card11 button{
+    border: 2px solid #008cfff3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card11 button:hover{
+    background-color: #008cfff3;
+    color: white;
+}
